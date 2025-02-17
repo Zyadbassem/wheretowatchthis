@@ -63,7 +63,8 @@ app.post("/api/whereisthis", async (req, res) => {
 const titleIdImageNameHelper = async (title) => {
   try {
     /** Encode the title */
-    const encodedTitle = encodeURIComponent(title);
+    const trimmidTitle = title.trim()
+    const encodedTitle = encodeURIComponent(trimmidTitle);
 
     /** Make the request */
     const url = `https://api.watchmode.com/v1/autocomplete-search/?apiKey=${watch_mode_secret_key}&search_value=${encodedTitle}&search_type=1`;
