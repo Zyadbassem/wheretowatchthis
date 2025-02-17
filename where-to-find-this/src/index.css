@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to top, rgba(0, 0, 0), rgb(72, 9, 99));
+    background-attachment: fixed;
+}
