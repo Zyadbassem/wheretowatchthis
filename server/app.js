@@ -11,7 +11,7 @@ const watch_mode_secret_key = process.env.WATCH_MODE_SECRET_KEY;
 
 // Middleware to parse JSON request bodies
 const corsOptions = {
-  origin: ["https://wheretowatchthis.vercel.app"],
+  origin: ["https://wheretowatchthis.vercel.app/"],
 };
 app.use(cors(corsOptions));
 app.use(express.json());
