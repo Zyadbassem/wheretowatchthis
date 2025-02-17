@@ -16,6 +16,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  return res.json({ hello: "you found me" });
+});
+
 app.post("/api/whereisthis", async (req, res) => {
   try {
     /** get the title */
