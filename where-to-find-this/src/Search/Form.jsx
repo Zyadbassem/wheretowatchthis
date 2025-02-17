@@ -33,7 +33,7 @@ function Form() {
     if (!title) return;
     try {
       // Post to the backent with the title
-      const response = await fetch(url, {
+      const response = await fetch(`${url}//api/whereisthis`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
