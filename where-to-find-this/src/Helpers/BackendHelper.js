@@ -1,3 +1,3 @@
-const url = "http://localhost:3000/api/whereisthis";
+const url = "https://wheretowatchthis-api.vercel.app";
 
 export default url;
